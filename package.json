@@ -1,11 +1,15 @@
 {
   "name": "muhammad-binyamin-portfolio",
   "version": "1.0.0",
+  "homepage": "https://Binyamin32.github.io/muhammad-binyamin-portfolio",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "npx gh-pages -d dist",
+    "tailwind:init": "node ./node_modules/tailwindcss/lib/cli.js init -p"
   },
   "dependencies": {
     "framer-motion": "^10.12.16",
@@ -16,6 +20,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^5.0.4",
     "autoprefixer": "^10.4.14",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.4.13",
     "vite": "^7.1.9"
